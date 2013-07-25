@@ -11,10 +11,7 @@ import java.net.UnknownHostException;
 import net.wimpi.modbus.net.TCPMasterConnection;
 import org.apache.log4j.Logger;
 
-/**
- *
- * @author USER
- */
+
 public class ModbusConnectionInitializer implements Runnable, ConnectionInitializer {
 
     static final org.apache.log4j.Logger logger = Logger.getLogger(ModbusConnectionInitializer.class);
