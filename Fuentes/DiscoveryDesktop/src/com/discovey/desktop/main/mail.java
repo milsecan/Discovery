@@ -6,7 +6,7 @@ package com.discovey.desktop.main;
 
 /**
  *
- * @author USER
+ * @author USERXXXXX
  */
 public class mail {
     
