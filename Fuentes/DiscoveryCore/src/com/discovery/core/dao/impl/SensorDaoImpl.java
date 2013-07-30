@@ -12,7 +12,7 @@ import javax.sql.DataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 /**
- *
+ *asdfasdf
  * @author USER
  */
 public class SensorDaoImpl implements SensorDao {
