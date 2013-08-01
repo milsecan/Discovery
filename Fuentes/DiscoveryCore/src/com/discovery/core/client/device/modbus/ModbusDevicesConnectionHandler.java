@@ -5,9 +5,8 @@
 package com.discovery.core.client.device.modbus;
 
 
+import com.discovery.core.DevicesConnectionHandler;
 import com.discovery.core.DiscoveryDeviceFacade;
-import com.discovery.server.devices.TCPDevicesClient;
-import com.discovey.core.interfaces.DevicesConnectionHandler;
 import java.net.UnknownHostException;
 import java.util.Iterator;
 import java.util.List;
