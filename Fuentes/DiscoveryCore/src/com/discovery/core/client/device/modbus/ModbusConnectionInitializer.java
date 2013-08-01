@@ -4,8 +4,8 @@
  */
 package com.discovery.core.client.device.modbus;
 
-import com.discovey.core.interfaces.ConnectionInitializer;
-import com.discovey.core.interfaces.DevicesConnectionHandler;
+import com.discovery.core.ConnectionInitializer;
+import com.discovery.core.DevicesConnectionHandler;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import net.wimpi.modbus.net.TCPMasterConnection;

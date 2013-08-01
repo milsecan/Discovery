@@ -11,4 +11,3 @@ package com.discovery.desktop.events;
 public class NewClass {
     
 }
-xaasd fasdf asdf asfd

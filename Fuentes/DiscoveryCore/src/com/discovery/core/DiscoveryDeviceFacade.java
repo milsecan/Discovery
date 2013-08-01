@@ -4,9 +4,7 @@
  */
 package com.discovery.core;
 
-import com.discovey.core.interfaces.DeviceClient;
 import java.util.HashMap;
-import test.ComunicacionTest;
 
 /**
  *
@@ -25,11 +23,7 @@ public class DiscoveryDeviceFacade {
 
     public void inicializarComunicacionPrueba(String identificador) {
 
-        Thread mThread = new Thread(new ComunicacionTest(deviceClients.get(identificador)));
-        mThread.start();
-
-        Thread mThread2 = new Thread(new ComunicacionTest(deviceClients.get(identificador)), "HIl000000000000000");
-        mThread2.start();
+     
     }
 
     public String testSpring() {
