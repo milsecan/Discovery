@@ -21,7 +21,9 @@ import net.wimpi.modbus.net.TCPMasterConnection;
 public class ModbusDevicesClient implements DeviceClient, Runnable {
 
     static final org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(ModbusDevicesClient.class);
+    
     //hugo
+    
     TCPMasterConnection con = null; //the connection
     ModbusTCPTransaction trans = null; //the transaction
     ReadInputDiscretesRequest req = null; //the request
@@ -53,8 +55,7 @@ public class ModbusDevicesClient implements DeviceClient, Runnable {
             isr = new InputStreamReader(this.deviceSokect.getInputStream());
             writer = new BufferedWriter(new OutputStreamWriter(this.deviceSokect.getOutputStream()));
 
-        } catch (IOException ex) {
-           
+        } catch (IOException ex) {           
             logger.error(ex.getMessage(), ex);
         }
 
