@@ -64,6 +64,7 @@ public class ModbusDevicesClient implements DeviceClient, Runnable {
     @Override
     public void run() {
         //log.logger.log(Level.INFO, "el cliente " + deviceSokect.getInetAddress() + " se conecto");
+        
         while (connected) {
             try {
                 if (reader.ready()) {
