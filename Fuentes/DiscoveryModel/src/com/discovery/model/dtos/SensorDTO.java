@@ -8,8 +8,7 @@ package com.discovery.model.dtos;
  *
  * @author USER
  */
-public class SensorDTO {
-    
+public class SensorDTO {    
     
     private int id;
     private String codigo;
@@ -101,8 +100,7 @@ public class SensorDTO {
      */
     public void setUnidad_id(int unidad_id) {
         this.unidad_id = unidad_id;
-    }
-    
+    }   
     
     
 }

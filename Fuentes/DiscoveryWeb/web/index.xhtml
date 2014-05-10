@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	    xmlns:h="http://java.sun.com/jsf/html"
+	    xmlns:f="http://java.sun.com/jsf/core"
+	    xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        
+    </h:head>
+
+    <body>
+        <h:form>                             
+            <h:panelGrid columns="4" cellpadding="5">
+                <h:outputLabel for="sumando1" value="Sumandos" style="font-weight:bold"/>
+                <p:inputText id="sumando1" value="#{pprBean.sumando1}" />
+                <p:inputText id="sumando2" value="#{pprBean.sumando2}" />
+                <p:commandButton value="Submit" update="display"/>
+                <h:outputText value="#{pprBean.resultado}" id="display" />
+            </h:panelGrid>     
+        </h:form>  
+               
+    </body>
+</html>

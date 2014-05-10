@@ -4,12 +4,15 @@
  */
 package com.discovery.core;
 
+import com.discovery.core.message.Message;
+import com.discovery.model.dtos.SensorDTO;
+
 /**
  *
  * @author USER
  */
 public interface DeviceClient {
 
-    public String sendRequest(String mensaje);
+    public  String sendRequest(Message mensaje, SensorDTO destino);
     public void start();
 }

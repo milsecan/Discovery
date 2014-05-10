@@ -27,7 +27,7 @@ public class ModbusConnectionInitializer implements Runnable, ConnectionInitiali
         this.devicesConnectionHandler = devicesConnectionHandler;
         this.isNotConnected = true;
         tcpMasterConnection = new TCPMasterConnection(InetAddress.getByName(ip));
-        tcpMasterConnection.setPort(Integer.parseInt(port));       
+        tcpMasterConnection.setPort(Integer.parseInt(port));   
 
     }
 
@@ -44,7 +44,6 @@ public class ModbusConnectionInitializer implements Runnable, ConnectionInitiali
             if (tcpMasterConnection.isConnected()) {
                 isNotConnected = false;
                 devicesConnectionHandler.notifyConnection(tcpMasterConnection);
-
             }
 
         }

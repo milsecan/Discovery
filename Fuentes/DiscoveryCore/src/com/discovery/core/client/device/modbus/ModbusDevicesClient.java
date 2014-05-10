@@ -5,6 +5,8 @@
 package com.discovery.core.client.device.modbus;
 
 import com.discovery.core.DeviceClient;
+import com.discovery.core.message.Message;
+import com.discovery.model.dtos.SensorDTO;
 import java.io.*;
 import java.net.InetAddress;
 import java.net.Socket;
@@ -92,12 +94,15 @@ public class ModbusDevicesClient implements DeviceClient, Runnable {
 
     //
     public void start() {
+        
         runner = new Thread(this);
         runner.start();
     }
 
     @Override
-    public String sendRequest(String mensaje) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public String sendRequest(Message mensaje , SensorDTO destino) {
+        
+        throw new UnsupportedOperationException("Not supported yet.");      
+        
     }
 }
